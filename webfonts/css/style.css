@@ -1,0 +1,139 @@
+style.css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+}
+
+
+.align-center{
+    align-items: center;
+}
+
+:root {
+ --mainColor: #0f2f44;
+  --yellowColor: #ffc712;
+  --primaryFont: "Ubuntu", sans-serif;
+  --secondaryFont: "Open Sans", sans-serif;
+  --thirdFont: "Abril Fatface", cursive;
+}
+
+body {
+  font-family: var(--primaryFont);
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* COMMON CSS ENDS HERE */
+
+/* HEADER STARTS HERE */
+header {
+  background-color: var(--mainColor);
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  padding: 19px 0;
+}
+header .welcome {
+  width: 50%;
+}
+header .opening {
+  width: 50%;
+  text-align: right;
+}
+
+/* HEADER STARTS HERE */
+
+/* NAV STARTS HERE */
+nav .logo {
+  width: 30%;
+}
+nav .menu {
+  width: 70%;
+}
+.menu ul {
+  text-align: right;
+}
+.menu ul li {
+  display: inline-block;
+}
+
+.menu ul li a {
+  color: #222;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 40px 20px;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu ul li:hover > a {
+  background-color: #fff9e6;
+  color: var(--yellowColor);
+}
+
+.menu .submenu {
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  background-color: #eee;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 30px;
+  transition: 0.3s;
+}
+
+.menu ul li:hover > .submenu {
+  opacity: 1;
+  margin-top: 0;
+  visibility: visible;
+}
+.menu ul li a .downArrow{
+    transition: 0.3s;
+}
+.menu ul li:hover a .downArrow {
+  transform: rotate(180deg);
+  display:inline-block;
+}
+
+.menu .submenu li {
+  display: block;
+}
+
+.menu .submenu li a {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* NAV STARTS HERE */
+
+
+/* BANNER STARTS HERE */
+#banner{
+    background-image: url(../bezency/img/banner.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+#banner .row{
+    height: 600px;
+    
+}
+/* BANNER STARTS HERE */
